@@ -1,0 +1,26 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+body {
+  font-family: "Fira Sans", Arial, sans-serif;
+}
+img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+.subtitulo {
+  font-size: 8rem;
+  color: #e0e0e0;
+  width: 4ch;
+  text-transform: uppercase;
+  line-height: 1;
+  word-break: break-all;
+}

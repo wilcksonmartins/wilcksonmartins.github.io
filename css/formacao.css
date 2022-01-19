@@ -1,0 +1,135 @@
+.formacao {
+  background-color: #141414;
+  color: #fff;
+}
+
+.formacao .subtitulo {
+  color: #000000;
+}
+.formacao-container {
+  max-width: 1200px;
+  padding: 40px;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  margin: 0 auto;
+  gap: 100px;
+  position: relative;
+}
+.formacao-container::after {
+  content: "";
+  display: block;
+  position: absolute;
+  background: url(/img/detalhe.svg) no-repeat center center;
+  width: 130px;
+  height: 100px;
+  bottom: -50px;
+  left: 20px;
+}
+.formacao .formacao-texto {
+  color: #a3a3a3;
+  font-size: 1.5rem;
+  max-width: 50ch;
+  margin-bottom: 60px;
+}
+.formacao .formacao-texto strong {
+  color: #fff;
+}
+.faculdade-lista {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-bottom: 60px;
+}
+.faculdade-lista li {
+  background-color: #000000;
+  padding: 20px;
+  flex: 1;
+  border-radius: 4px;
+  display: flex;
+  flex-direction: column;
+}
+.faculdade-lista .faculdade-tipo {
+  color: #a3a3a3;
+  margin-bottom: 10px;
+  font-size: 0.82rem;
+  text-transform: uppercase;
+}
+.faculdade-lista .faculdade-curso {
+  flex: 1;
+  font-size: 1.125rem;
+  line-height: 1.1;
+  padding: 20px 0 px;
+  margin-bottom: 40px;
+  margin-top: 20px;
+}
+.faculdade-lista .faculdade-curso::before {
+  content: "";
+  display: block;
+  width: 4px;
+  height: 20px;
+  background: linear-gradient(#b6f829, #67dd0a);
+  top: 20px;
+  left: -24px;
+  position: relative;
+}
+.faculdade-lista .faculdade-local {
+  color: #a3a3a3;
+}
+.cursos {
+  margin-bottom: 60px;
+}
+.informacao-extra .cursos h3 {
+  font-size: 1.1rem;
+  margin-bottom: 20px;
+  color: #a3a3a3;
+}
+.informacao-extra li {
+  color: #f7f7f7;
+  font-size: 1.125rem;
+  font-weight: bold;
+}
+.informacao-extra h3 {
+  position: relative;
+}
+.informacao-extra h3::before {
+  content: "";
+  display: block;
+  width: 24px;
+  height: 24px;
+  left: -34px;
+  position: absolute;
+}
+.informacao-extra .cursos h3::before {
+  background: url(/img/cursos.svg);
+}
+.informacao-extra .idiomas h3::before {
+  background: url(/img/idiomas.svg);
+}
+.cursos li {
+  display: flex;
+  justify-content: space-between;
+}
+.cursos span {
+  color: #525252;
+}
+.idiomas h3 {
+  margin-bottom: 20px;
+  color: #a3a3a3;
+}
+.idiomas span {
+  color: #525252;
+}
+@media (max-width: 800px) {
+  .formacao-container {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+  .formacao .subtitulo {
+    font-size: 2rem;
+    max-width: initial !important;
+    color: #fff;
+  }
+  .informacao-extra {
+    margin-bottom: 50px;
+  }
+}

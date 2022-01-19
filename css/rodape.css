@@ -1,0 +1,40 @@
+.rodape {
+  background: #000;
+  color: #fff;
+}
+.rodape-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 120px 40px;
+  gap: 80px;
+  align-items: center;
+}
+.rodape-container .rodape-texto {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #a3a3a3;
+  text-align: start;
+}
+.rodape-container li {
+  margin-bottom: 20px;
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+.rodape-container li a {
+  color: #fff;
+  text-decoration: underline;
+}
+.rodape span {
+  color: #a3a3a3;
+}
+@media (max-width: 800px) {
+  .rodape-container {
+    grid-template-columns: 1fr;
+    padding: 80px 40px;
+  }
+  .rodape-container li {
+    font-size: 1.3rem;
+  }
+}
